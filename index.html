@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <style>
+  .show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+</style>
+<head>
+  <meta name="description" content="Eric Nyongolo – Frontend Developer, IT Support Specialist & System Administrator based in Nairobi. Building modern responsive websites and providing professional IT services.">
+<meta name="keywords" content="Eric Nyongolo, Frontend Developer Nairobi, IT Support Kenya, Web Developer Kenya, System Administrator">
+<meta name="author" content="Eric Nyongolo">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Eric Nyongolo | Frontend Developer & IT Specialist</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        }
+      }
+    }
+  </script>
+</head>
+<footer class="py-20 border-t border-slate-300 dark:border-slate-800">
+  <div class="max-w-7xl mx-auto px-6 text-center space-y-6">
+
+    <h3 class="text-2xl font-bold">Eric Nyongolo</h3>
+    <p class="opacity-70">Frontend Developer • IT Support • System Administrator</p>
+
+    <div class="flex justify-center gap-6 text-xl">
+      <a href="https://www.linkedin.com/in/eric-mugisho-nyongolo-847421319" target="_blank" class="hover:text-indigo-600 transition">LinkedIn</a>
+      <a href="https://x.com/eric_nyongolo" target="_blank" class="hover:text-indigo-600 transition">X</a>
+      <a href="https://www.facebook.com/ericnyongolo44" target="_blank" class="hover:text-indigo-600 transition">Facebook</a>
+      <a href="https://wa.me/254731771005" target="_blank" class="hover:text-indigo-600 transition">WhatsApp</a>
+    </div>
+   <p class="text-sm opacity-50">© 2026 Eric Nyongolo. All rights reserved.</p>
+
+  </div>
+</footer>
+
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-500">
+
+<!-- Navbar -->
+<header class="fixed w-full top-0 z-50 backdrop-blur bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800">
+  <nav class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <h1 class="font-extrabold text-xl tracking-wide">Eric<span class="text-indigo-600">.</span></h1>
+    <div class="flex items-center gap-6">
+      <button id="themeToggle" class="text-xl">🌙</button>
+      <a href="#contact" class="bg-indigo-600 text-white px-5 py-2 rounded-xl shadow-lg hover:bg-indigo-700 transition">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="min-h-screen flex items-center justify-center relative overflow-hidden pt-24">
+  <div class="absolute inset-0 -z-10 bg-gradient-to-br from-indigo-200/40 via-transparent to-pink-200/30 dark:from-indigo-900/30 dark:to-fuchsia-900/20"></div>
+
+  <div class="text-center max-w-4xl px-6">
+    <h2 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+      Hi, I'm <span class="text-indigo-600">Eric Nyongolo</span>
+    </h2>
+    <p class="text-xl md:text-2xl opacity-80 mb-10">
+      Frontend Developer • IT Support Specialist • System Administrator
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-6">
+      <a href="#projects" class="px-8 py-3 bg-indigo-600 text-white rounded-2xl shadow-xl hover:scale-105 transition">
+        View My Work
+      </a>
+      <a href="#contact" class="px-8 py-3 border border-slate-400 dark:border-slate-700 rounded-2xl hover:bg-slate-100 dark:hover:bg-slate-900 transition">
+        Let's Talk
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-32 max-w-7xl mx-auto px-6">
+  <h3 class="text-4xl font-bold mb-12 text-center">About Me</h3>
+  <p class="max-w-3xl mx-auto text-center text-lg opacity-80">
+    I am a passionate Frontend Developer and IT Support Specialist based in Nairobi, focused on building elegant user interfaces and maintaining robust IT infrastructures. My mission is to merge creativity with technology for impactful digital solutions.
+  </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-32 bg-slate-100 dark:bg-slate-900">
+  <div class="max-w-7xl mx-auto px-6">
+    <h3 class="text-4xl font-bold mb-16 text-center">Technical Skills</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div class="skill-card p-8 rounded-2xl bg-white dark:bg-slate-950 shadow-xl">
+        <h4 class="text-xl font-semibold mb-4">Frontend</h4>
+        <p>HTML5, CSS3, JavaScript, Tailwind CSS</p>
+      </div>
+
+      <div class="skill-card p-8 rounded-2xl bg-white dark:bg-slate-950 shadow-xl">
+        <h4 class="text-xl font-semibold mb-4">IT Support</h4>
+        <p>Hardware Repair, Windows Installation, Helpdesk, Networking</p>
+      </div>
+
+      <div class="skill-card p-8 rounded-2xl bg-white dark:bg-slate-950 shadow-xl">
+        <h4 class="text-xl font-semibold mb-4">Administration</h4>
+        <p>MS Office, Data Management, Reporting, Documentation</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" class="py-32 max-w-7xl mx-auto px-6">
+  <h3 class="text-4xl font-bold mb-16 text-center">Experience</h3>
+  <div class="space-y-10 max-w-4xl mx-auto">
+
+    <div class="p-8 rounded-2xl border border-slate-300 dark:border-slate-800">
+      <h4 class="text-xl font-semibold">Frontend Developer</h4>
+      <p class="opacity-80">Responsive websites, SEO optimization, GitHub deployment.</p>
+    </div>
+
+    <div class="p-8 rounded-2xl border border-slate-300 dark:border-slate-800">
+      <h4 class="text-xl font-semibold">IT Support Technician</h4>
+      <p class="opacity-80">System diagnostics, hardware upgrades, user support.</p>
+    </div>
+
+    <div class="p-8 rounded-2xl border border-slate-300 dark:border-slate-800">
+      <h4 class="text-xl font-semibold">Administrative Officer</h4>
+      <p class="opacity-80">Documentation management, reporting automation, scheduling.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="py-32 bg-slate-100 dark:bg-slate-900">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h3 class="text-4xl font-bold mb-16">IT Services</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div class="service-card p-8 bg-white dark:bg-slate-950 rounded-2xl shadow-xl">
+        Web Development
+      </div>
+      <div class="service-card p-8 bg-white dark:bg-slate-950 rounded-2xl shadow-xl">
+        IT Support & Maintenance
+      </div>
+      <div class="service-card p-8 bg-white dark:bg-slate-950 rounded-2xl shadow-xl">
+        System Administration
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-32 max-w-7xl mx-auto px-6">
+  <h3 class="text-4xl font-bold mb-16 text-center">Projects</h3>
+
+  <div class="grid md:grid-cols-3 gap-10">
+    <div class="project-card p-8 rounded-2xl bg-white dark:bg-slate-950 shadow-xl">
+      <h4 class="text-xl font-semibold mb-2">Corporate Website</h4>
+      <p class="opacity-80">Responsive business website with modern UI.</p>
+    </div>
+
+    <div class="project-card p-8 rounded-2xl bg-white dark:bg-slate-950 shadow-xl">
+      <h4 class="text-xl font-semibold mb-2">IT Support System</h4>
+      <p class="opacity-80">Internal support management platform.</p>
+    </div>
+
+    <div class="project-card p-8 rounded-2xl bg-white dark:bg-slate-950 shadow-xl">
+      <h4 class="text-xl font-semibold mb-2">Admin Dashboard</h4>
+      <p class="opacity-80">Data reporting & automation dashboard.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-32 bg-slate-100 dark:bg-slate-900">
+  <div class="max-w-3xl mx-auto text-center px-6">
+    <h3 class="text-4xl font-bold mb-8">Let's Work Together</h3>
+    <p class="opacity-80 mb-12">Available for freelance, full-time and collaborations.</p>
+    <a href="https://wa.me/254731771005" class="px-10 py-4 bg-indigo-600 text-white rounded-2xl shadow-xl hover:scale-105 transition">
+      Contact via WhatsApp
+    </a>
+  </div>
+   
+
+</section>
+<!-- JS -->
+<script>
+  const toggle = document.getElementById("themeToggle");
+  const html = document.documentElement;
+
+  if (localStorage.theme === "dark" || 
+     (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      html.classList.add("dark");
+      toggle.textContent = "☀️";
+  }
+
+  toggle.addEventListener("click", () => {
+    html.classList.toggle("dark");
+    if (html.classList.contains("dark")) {
+      localStorage.theme = "dark";
+      toggle.textContent = "☀️";
+    } else {
+      localStorage.theme = "light";
+      toggle.textContent = "🌙";
+    }
+  });
+
+  // Scroll Animations
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  }, { threshold: 0.15 });
+
+  document.querySelectorAll('.skill-card, .service-card, .project-card').forEach(el => {
+    el.classList.add("opacity-0", "translate-y-10", "transition", "duration-700");
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
