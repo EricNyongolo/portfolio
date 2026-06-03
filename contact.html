@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Eric Nyongolo</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <style>
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .form-input { @apply w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 pt-24">
+
+    <nav id="navbar" class="fixed top-0 w-full z-50 py-4 px-6 md:px-12 flex justify-between items-center bg-white/95 backdrop-blur-sm shadow-sm">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">EN<span>.</span></a>
+        <div class="hidden md:flex items-center space-x-8 text-sm font-semibold uppercase tracking-wider">
+            <a href="index.html" class="hover:text-blue-600 transition">Accueil</a>
+            <a href="about.html" class="hover:text-blue-600 transition">À propos</a>
+            <a href="projects.html" class="hover:text-blue-600 transition">Projets</a>
+            <a href="contact.html" class="text-blue-600">Contact</a>
+        </div>
+        <select id="lang-select" class="bg-slate-100 border-none rounded-lg px-3 py-1 text-sm font-bold">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+            <option value="sw">SW</option>
+        </select>
+    </nav>
+
+    <main class="container mx-auto px-6 md:px-12 py-12">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+            
+            <div class="reveal">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Travaillons <span class="text-blue-600">ensemble</span>.</h1>
+                <p class="text-lg text-slate-600 mb-10">Vous avez un projet web ou besoin d'une assistance technique IT ? N'hésitez pas à me contacter via le formulaire ou mes réseaux sociaux.</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500 uppercase font-bold tracking-wider">Email</p>
+                            <a href="mailto:ericnyongolo4@gmail.com" class="text-lg font-semibold hover:text-blue-600 transition">ericnyongolo4@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xl">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500 uppercase font-bold tracking-wider">Téléphone / WhatsApp</p>
+                            <a href="https://wa.me/254727176805" class="text-lg font-semibold hover:text-green-600 transition">+254 727 176 805</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-100 text-slate-600 rounded-full flex items-center justify-center text-xl">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-slate-500 uppercase font-bold tracking-wider">Localisation</p>
+                            <p class="text-lg font-semibold">Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12">
+                    <p class="text-sm text-slate-500 uppercase font-bold mb-4">Suivez-moi</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/in/eric-mugisho-nyongolo-847421319" class="w-10 h-10 bg-white shadow-md rounded-lg flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/ericnyongolo44" class="w-10 h-10 bg-white shadow-md rounded-lg flex items-center justify-center hover:bg-blue-700 hover:text-white transition-all"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/eric_nyongolo" class="w-10 h-10 bg-white shadow-md rounded-lg flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal bg-white p-8 md:p-10 rounded-3xl shadow-xl border border-slate-100">
+                <form id="contact-form">
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-bold mb-2">Nom Complet</label>
+                            <input type="text" name="user_name" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold mb-2">Email</label>
+                            <input type="email" name="user_email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-sm font-bold mb-2">Sujet</label>
+                        <input type="text" name="subject" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="Offre d'emploi / Projet">
+                    </div>
+                    <div class="mb-8">
+                        <label class="block text-sm font-bold mb-2">Message</label>
+                        <textarea name="message" rows="5" required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all" placeholder="Votre message ici..."></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-200 flex items-center justify-center gap-2">
+                        <span>Envoyer le Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <p id="form-status" class="mt-4 text-center hidden font-medium"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Initialisation EmailJS
+        (function() {
+            emailjs.init("TjkCId0W-N5zoqNhu"); // Votre Public Key
+        })();
+
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const statusMsg = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = 'Envoi en cours... <i class="fas fa-spinner animate-spin"></i>';
+
+            emailjs.sendForm('service_ccn8jkt', 'template_qkbagyj', this)
+                .then(function() {
+                    statusMsg.textContent = "Message envoyé avec succès ! Merci Eric vous répondra bientôt.";
+                    statusMsg.className = "mt-4 text-center text-green-600";
+                    statusMsg.classList.remove('hidden');
+                    contactForm.reset();
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Envoyer le Message <i class="fas fa-paper-plane"></i>';
+                }, function(error) {
+                    statusMsg.textContent = "Erreur lors de l'envoi. Veuillez réessayer.";
+                    statusMsg.className = "mt-4 text-center text-red-600";
+                    statusMsg.classList.remove('hidden');
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = 'Envoyer le Message <i class="fas fa-paper-plane"></i>';
+                });
+        });
+
+        // Animation au scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
